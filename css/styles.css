@@ -224,39 +224,28 @@ body {
     padding: 10px 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    display: inline-block;
+    display: block;
     margin-top: 0;
+    width: 90%;
+    max-width: 800px;
 }
 
-/* Photo Section */
-.photo-section {
-    background-color: var(--white);
-    padding: 20px;
+/* Photo Container */
+.photo-container {
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
 }
 
-.photo-placeholder {
-    width: 120px;
-    height: 80px;
-    background-color: #e0e0e0;
-    border: 3px solid var(--primary-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.spider-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
     transform: rotate(-4deg);
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.photo-text {
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--primary-dark);
-    text-align: center;
-    letter-spacing: 0.5px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    border: 3px solid var(--primary-dark);
+    background-color: var(--white);
 }
 
 /* Responsive Design */
