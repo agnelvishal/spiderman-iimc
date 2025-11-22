@@ -1,0 +1,13 @@
+/* Google Fonts - Alternatives for Swiss fonts */
+
+/* Oswald: Condensed bold font (replaces Swis721 BlkCn BT) */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+/* Bebas Neue: Ultra-condensed display font (replaces Swiss911 XCm BT) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Anton: Bold condensed alternative */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Roboto Condensed: For body text and metadata */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;900&display=swap');

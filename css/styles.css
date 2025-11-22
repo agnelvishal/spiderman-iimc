@@ -1,0 +1,304 @@
+/* CSS Custom Properties - Color Scheme */
+:root {
+    --gradient-start: #ffca7a;
+    --gradient-end: #ffad32;
+    --primary-dark: #333333;
+    --white: #ffffff;
+    --red-header: #a92621;
+    --red-accent: #de5959;
+    --shadow-color: rgba(178, 187, 198, 0.65);
+    --paper-bg: #e0e0e0;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    background: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Newspaper Card */
+.newspaper-card {
+    width: 100%;
+    background-color: var(--paper-bg);
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Banner */
+.header-banner {
+    background-color: var(--red-header);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Anton', 'Bebas Neue', Impact, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 3px;
+    text-shadow:
+        -3px -3px 0 var(--primary-dark),
+        3px -3px 0 var(--primary-dark),
+        -3px 3px 0 var(--primary-dark),
+        3px 3px 0 var(--primary-dark),
+        -3px 0 0 var(--primary-dark),
+        3px 0 0 var(--primary-dark),
+        0 -3px 0 var(--primary-dark),
+        0 3px 0 var(--primary-dark),
+        4px 4px 8px rgba(0, 0, 0, 0.5);
+    transform: skew(-8deg, 0deg);
+    font-style: italic;
+}
+
+/* Metadata Section */
+.metadata {
+    padding: 12px 20px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+.metadata span {
+    display: inline-block;
+}
+
+.price {
+    margin: 0 10px;
+    font-weight: 900;
+}
+
+.tagline {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* News Cards Section */
+.news-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 15px;
+    background-color: var(--white);
+}
+
+.news-card {
+    border: 2px solid var(--primary-dark);
+    padding: 12px 8px;
+    background-color: var(--white);
+    position: relative;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-grow: 1;
+}
+
+.card-subtitle {
+    font-family: 'Oswald', 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-title {
+    font-family: 'Oswald', 'Anton', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: -0.3px;
+}
+
+.page-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+    padding: 3px 8px;
+    letter-spacing: 0.5px;
+}
+
+/* Divider */
+.divider {
+    height: 2px;
+    background-color: var(--primary-dark);
+    margin: 0;
+}
+
+/* Reward Section */
+.reward-section {
+    background-color: var(--paper-bg);
+    padding: 60px 30px;
+    position: relative;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reward-accent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: var(--red-accent);
+}
+
+.reward-label {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 80px;
+    color: var(--primary-dark);
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 30px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.reward-headline {
+    font-family: 'Bebas Neue', 'Anton', Impact, sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--primary-dark);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    padding: 30px 40px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.reward-banner {
+    background-color: var(--red-accent);
+    color: var(--white);
+    font-family: 'Oswald', 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+/* Photo Section */
+.photo-section {
+    background-color: var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.photo-placeholder {
+    width: 120px;
+    height: 80px;
+    background-color: #e0e0e0;
+    border: 3px solid var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-4deg);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-text {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .reward-headline {
+        font-size: 42px;
+    }
+
+    .news-cards {
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .card-title {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .reward-headline {
+        font-size: 36px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .metadata {
+        font-size: 6px;
+    }
+
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hover Effects (Optional) */
+.news-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
